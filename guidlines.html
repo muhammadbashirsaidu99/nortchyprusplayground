@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>North Cyprus Playground</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+ol.gradient-list {
+	 counter-reset: gradient-counter;
+	 list-style: none;
+	 margin: 1.75rem 0;
+	 padding-left: 1rem;
+}
+ ol.gradient-list > li {
+	 background: white;
+	 border-radius: 0 0.5rem 0.5rem 0.5rem;
+	 counter-increment: gradient-counter;
+	 margin-top: 1rem;
+	 min-height: 3rem;
+	 padding: 1rem 1rem 1rem 3rem;
+	 position: relative;
+}
+ ol.gradient-list > li::before, ol.gradient-list > li::after {
+	 background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+	 border-radius: 1rem 1rem 0 1rem;
+	 content: '';
+	 height: 3rem;
+	 left: -1rem;
+	 overflow: hidden;
+	 position: absolute;
+	 top: -1rem;
+	 width: 3rem;
+}
+ ol.gradient-list > li::before {
+	 align-items: flex-end;
+	 content: counter(gradient-counter);
+	 color: #1d1f20;
+	 display: flex;
+	 font: 900 1.5em/1 'Montserrat';
+	 justify-content: flex-end;
+	 padding: 0.125em 0.25em;
+	 z-index: 1;
+}
+ ol.gradient-list > li:nth-child(10n+1):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.2) 0%, rgba(252, 165, 3, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+2):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.4) 0%, rgba(252, 165, 3, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+3):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.6) 0%, rgba(253, 219, 50, 0.829) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+4):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+5):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 1) 0%, rgba(253, 220, 50, 1) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+6):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+7):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+8):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.4) 0%, rgba(252, 165, 3, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+9):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+10):before {
+	 background: linear-gradient(135deg, rgba(254, 93, 55, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ ol.gradient-list > li + li {
+	 margin-top: 2rem;
+}
+ 
+ 
+ 
+
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" alt="logo" width="300px">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="checklist.html" class="nav-item nav-link">Checklist</a>
+                    <a href="age-groups.html" class="nav-item nav-link">Age Groups</a>
+                    <a href="rules-regulations.html" class="nav-item nav-link">Rules & Regulations</a>
+                    <a href="guidlines.html" class="nav-item nav-link active">Guidlines</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="playgrounds.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Playgrounds<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Page Header End -->
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">Guidlines</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Guidlines</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Guidlines Start-->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Guidlines</h1>
+                    <p>Below is a list of guidlines</p>
+                </div>
+                <ol class="gradient-list">
+                    <li>Swings should be made of soft material such as rubber or plastic, not wood or metal.</li>
+                    <li>Kids should always sit in the swing, not stand or kneel. They should hold on tightly with both hands while swinging, and when finished swinging, stop the swing completely before getting off.</li>
+                    <li>Children should stay a safe distance from other kids on swings, being careful not to run or walk in front of or in back of moving swings.</li>
+                    <li>Kids should never ride with more than one child to a swing. Swings are designed to safely hold only one person.</li>
+                    <li>Seesaw seats are like swings: one child per seat. A child who is too light to seesaw with a partner should find a different partner — not add another child to his or her side of the seesaw.</li>
+                    <li>Kids should always sit facing one another, not turned around.</li>
+                    <li>Teach kids to hold on tightly with both hands while on a seesaw, not to touch the ground or push off with their hands, and to keep feet to the sides, out from underneath the seesaw.</li>
+                    <li>Kids should stand back from a seesaw when it's in use. They should never stand beneath a raised seesaw, stand and rock in the middle, or try to climb onto it while it's in motion.</li>
+                    <li>Children should take one step at a time and hold onto the handrail when climbing the ladder to the top of the slide. They should not climb up the sliding board itself to get to the top.</li>
+                    <li>Kids should always slide down feet first and sitting up, never head first or on their back or stomach.</li>
+                    <li>Only one child should be on the slide platform at a time, and kids shouldn't slide down in groups.</li>
+                    <li>Kids should always check that the bottom of the slide is clear before sliding down. When they reach the bottom, they should get off and move away from the end of the slide so it's clear for other kids to slide down.</li>
+                  </ol>
+            </div>
+        </div>
+          
+        <!-- Guidlines End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Lefkosa, North Cyprus</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+90 533 822 67 90</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ncp.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="rules-regulations.html">Rules & Regulations</a>
+                        <a class="btn btn-link text-white-50" href="guidlines.html">Guidlines</a>
+                        <a class="btn btn-link text-white-50" href="call-to-action.html">Join Us</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Enter your email to sign up for our weekly newsletter.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">North Cyprus Playground</a>, All Right Reserved. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+
+
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+        
+    </script>
+</body>
+
+</html>
